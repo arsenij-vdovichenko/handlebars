@@ -1,0 +1,31 @@
+{
+  "name": "handlebars",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /bibliotek/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arsenij-vdovichenko/handlebars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arsenij-vdovichenko/handlebars/issues"
+  },
+  "homepage": "https://github.com/arsenij-vdovichenko/handlebars#readme",
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "handlebars": "^4.7.8",
+    "parcel": "^2.16.4",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-transformer-hbs": "^1.0.4"
+  }
+}
